@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="icon" href="images/clock.png" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>jQuery Party</title>
+  </head>
+
+  <body>
+    <!-- start header -->
+
+    <header
+      class="d-flex justify-content-center align-items-center text-center text-white text-capitalize position-relative"
+    >
+      <div class="content">
+        <h1
+          class="fw-bold text-white text-uppercase wow animate__backInDown"
+          data-wow-delay=".3s"
+        >
+          egyption party
+        </h1>
+        <small class="fw-bold text-white">let's have fun</small>
+      </div>
+    </header>
+
+    <!-- start header -->
+
+    <!-- start open icon -->
+
+    <div
+      class="open position-fixed wow animate__fadeInLeft"
+      data-wow-delay=".6s"
+    >
+      <ul class="p-5 list-unstyled">
+        <i class="far fa-times-circle position-absolute close"></i>
+        <li><a href="#">home</a></li>
+        <li><a href="#time">duration</a></li>
+        <li><a href="#acc">details</a></li>
+        <li><a href="#form">content</a></li>
+      </ul>
+      <div class="openIcon position-absolute text-white">
+        <i class="fas fa-bars"></i> <span>open</span>
+      </div>
+    </div>
+
+    <!-- end open icon -->
+
+    <!-- start accordion -->
+
+    <div class="acc w-75 mx-auto text-center my-5" id="acc">
+      <h3
+        class="mt-5 w-75 mx-auto p-2 rounded-1 mb-0 wow animate__fadeInLeft"
+        data-wow-delay=".3s"
+      >
+        one singer
+      </h3>
+      <div class="acc-about w-75 mx-auto p-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo animi nisi
+        laudantium, nulla adipisci itaque? Rerum dolorem incidunt vitae quaerat
+        temporibus neque sunt soluta, voluptas magni sed pariatur quo eum in
+        nostrum recusandae nisi maxime. Laborum dolorum molestias commodi cumque
+        sapiente. Quas, obcaecati rem? Illo cumque officiis perferendis eveniet
+        sapiente.
+      </div>
+      <h3
+        class="w-75 mx-auto p-2 rounded-1 mb-0 wow animate__fadeInRight"
+        data-wow-delay=".4s"
+      >
+        two singer
+      </h3>
+      <div class="acc-about w-75 mx-auto p-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo animi nisi
+        laudantium, nulla adipisci itaque? Rerum dolorem incidunt vitae quaerat
+        temporibus neque sunt soluta, voluptas magni sed pariatur quo eum in
+        nostrum recusandae nisi maxime. Laborum dolorum molestias commodi cumque
+        sapiente. Quas, obcaecati rem? Illo cumque officiis perferendis eveniet
+        sapiente.
+      </div>
+      <h3
+        class="w-75 mx-auto p-2 rounded-1 mb-0 wow animate__fadeInLeft"
+        data-wow-delay=".5s"
+      >
+        three singer
+      </h3>
+      <div class="acc-about w-75 mx-auto p-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo animi nisi
+        laudantium, nulla adipisci itaque? Rerum dolorem incidunt vitae quaerat
+        temporibus neque sunt soluta, voluptas magni sed pariatur quo eum in
+        nostrum recusandae nisi maxime. Laborum dolorum molestias commodi cumque
+        sapiente. Quas, obcaecati rem? Illo cumque officiis perferendis eveniet
+        sapiente.
+      </div>
+      <h3
+        class="w-75 mx-auto p-2 rounded-1 mb-0 wow animate__fadeInRight"
+        data-wow-delay=".6s"
+      >
+        four singer
+      </h3>
+      <div class="acc-about w-75 mx-auto p-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo animi nisi
+        laudantium, nulla adipisci itaque? Rerum dolorem incidunt vitae quaerat
+        temporibus neque sunt soluta, voluptas magni sed pariatur quo eum in
+        nostrum recusandae nisi maxime. Laborum dolorum molestias commodi cumque
+        sapiente. Quas, obcaecati rem? Illo cumque officiis perferendis eveniet
+        sapiente.
+      </div>
+    </div>
+
+    <!-- end accordion -->
+
+    <!-- start time -->
+
+    <div class="time text-center" id="time">
+      <div class="container">
+        <div class="row p-5">
+          <div class="col-lg-3 col-md-6">
+            <h2 class="item day"></h2>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h2 class="item hour"></h2>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h2 class="item min"></h2>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h2 class="item second"></h2>
+          </div>
+          <div class="col-lg-12">
+            <h2 id="finished" class="item d-none">Count Down finished</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end time -->
+
+    <!-- start join -->
+
+    <div class="bigJoin my-5" id="form">
+      <div class="container">
+        <div class="join d-flex justify-content-between">
+          <h3 class="text-uppercase fs-2 mb-3 fw-bold">join us</h3>
+          <p class="text-capitalize">
+            Lorem ipsum dolor sit, amet consectetur adipisicing. veniam.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 wow animate__fadeInLeft" data-wow-delay=".3s">
+            <div class="item my-5">
+              <h4 class="text-uppercase fw-bold fs-5 my-4">contact info</h4>
+              <p class="text-muted">
+                Why you should hire me writeup Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean massa. Cum sociis natoque nascetur ridiculus mus.
+                nascetur ridiculus mus.
+              </p>
+              <div class="bigLocation my-5">
+                <div class="location mt-2 mb-3">
+                  <i class="fas fa-map-marker-alt me-3 fw-bold"></i>
+                  <span class="fw-bold"
+                    >New Street 22545, Nexa Road, New York City, USA</span
+                  >
+                </div>
+                <div class="location mb-3">
+                  <i class="far fa-envelope me-3 fw-bold"></i>
+                  <span class="fw-bold">hello@uigrid.com</span>
+                </div>
+                <div class="location mb-3">
+                  <i class="fas fa-phone-alt me-3 fw-bold"></i>
+                  <span class="fw-bold">001-000-000-000</span>
+                </div>
+              </div>
+              <div class="myIcon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-behance"></i>
+                <i class="fas fa-basketball-ball"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 wow animate__fadeInRight" data-wow-delay=".3s">
+            <form class="my-5">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Name"
+              />
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter Email"
+              />
+              <textarea
+                maxlength="100"
+                cols="30"
+                rows="6"
+                class="form-control"
+                placeholder="Enter Message"
+              ></textarea>
+              <p class="fw-bold text-muted">
+                <span class="text-danger" id="num">100</span> characyer
+                reamining
+              </p>
+              <button class="btn text-uppercase">send message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end join -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>

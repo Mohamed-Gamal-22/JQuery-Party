@@ -1,0 +1,270 @@
+:root {
+  --mainColor: rgb(175, 154, 251);
+  --secondColor: rgb(255, 243, 218);
+  --transition: 0.3s;
+}
+
+body {
+  overflow-x: hidden;
+}
+/* start header */
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/pexels-vishnu-r-nair-1105666.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+header h1 {
+  font-size: 70px;
+  color: var(--secondColor);
+  letter-spacing: 2.5px;
+}
+header small {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  header h1 {
+    font-size: 60px;
+  }
+  header small {
+    font-size: 17px;
+  }
+}
+
+/* end header */
+
+/* start open tap */
+
+.open {
+  height: 100vh;
+  width: 270px;
+  z-index: 10;
+  left: -270px;
+  top: 0;
+  background-color: var(--mainColor);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.open ul li {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.open ul li:first-of-type {
+  margin-top: 50px;
+}
+.open ul i {
+  font-size: 30px;
+  right: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.open ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.open ul li a:hover {
+  color: var(--secondColor);
+}
+.open ul i:hover {
+  color: var(--secondColor);
+}
+.openIcon {
+  right: -115px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.openIcon i,
+.openIcon span {
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.openIcon:hover i,
+.openIcon:hover span {
+  color: var(--secondColor);
+}
+/* end open tap */
+
+/* start acc */
+
+.acc h3 {
+  background-color: var(--mainColor);
+  color: #fff;
+  text-transform: uppercase;
+}
+.acc > div {
+  background-color: #e4d3cf;
+  color: #333;
+  text-align: justify;
+  text-transform: capitalize;
+  line-height: 1.7;
+  display: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .acc h3,
+  .acc > div {
+    width: 100% !important;
+  }
+}
+/* end acc */
+
+/* start time */
+
+.time {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/pexels-suzy-hazelwood-3656855.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 20px 0;
+  margin-top: 100px;
+}
+
+.time .row .item {
+  background-color: transparent;
+  border: 3px solid #fff;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+  color: #fff;
+  transition: all .3s;
+  font-size: 20px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+.time .row .item:hover{
+  border: 3px solid rgb(175, 154, 251);
+}
+
+/* end time */
+
+/* start join */
+
+.bigJoin .join h3,
+.bigJoin .join p {
+  color: var(--mainColor);
+}
+@media screen and (max-width: 770px) {
+  .bigJoin .join {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.bigJoin .row .item p {
+  line-height: 1.7;
+}
+
+.bigJoin .row .item .bigLocation {
+  background-color: #f1f1f1;
+  color: var(--mainColor);
+  padding: 10px 12px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.bigJoin .row .item .bigLocation:hover {
+  color: #f1f1f1;
+  background-color: #333;
+  border: 2px solid #f1f1f1;
+}
+
+.bigJoin .row .item .myIcon i {
+  margin: 10px;
+  border: 2px solid var(--mainColor);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--mainColor);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.bigJoin .row .item .myIcon i:hover {
+  color: var(--secondColor);
+  background-color: var(--mainColor);
+  border: 2px solid var(--secondColor);
+}
+
+@media screen and (max-width: 1000px) {
+  .bigJoin .row .item .myIcon i {
+    margin: 8px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+}
+.bigJoin .row form .form-control {
+  margin-bottom: 22px;
+  padding: 12px;
+}
+.bigJoin .row form button {
+  background-color: var(--secondColor);
+  color: var(--mainColor);
+  padding: 10px 14px;
+  border: 2px solid var(--mainColor);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.bigJoin .row form button:hover {
+  background-color: var(--mainColor);
+  color: var(--secondColor);
+  padding: 12px 15px;
+  border: 2px solid var(--secondColor);
+}
+/* end join */
